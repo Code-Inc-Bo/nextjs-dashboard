@@ -39,7 +39,7 @@ export async function createInvoice(prevState: State, formData: FormData) {
     status: formData.get('status'),
   });
 
-  console.log(validatedFields);
+  //console.log(validatedFields);
  
   // If form validation fails, return errors early. Otherwise, continue.
   if (!validatedFields.success) {
@@ -84,7 +84,7 @@ export async function updateInvoice(
     status: formData.get('status'),
   });
 
-  console.log(validatedFields);
+  //console.log(validatedFields);
  
   if (!validatedFields.success) {
     return {
